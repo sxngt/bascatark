@@ -10,7 +10,7 @@ const MainPage = () => {
 
 	useEffect(() => {
 		if (videoRef.current) {
-			videoRef.current.currentTime = 34; // 33초부터 시작
+			videoRef.current.currentTime = 43; // 33초부터 시작
 		}
 		document.body.style.margin = '0';
 		document.body.style.padding = '0';
