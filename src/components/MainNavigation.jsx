@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Menu, X, ChevronDown} from 'lucide-react';
+import logo from "/src/assets/logo.png";
 
 const navigation = [
 	{
@@ -101,7 +102,7 @@ const MainNavigation = () => {
 					<a href={"/"}>
 						<div className="flex-shrink-0">
 							<img
-								src="/src/assets/logo.png"
+								src={logo}
 								alt="BASCATARK"
 								className="h-8 w-auto"
 							/>

@@ -1,9 +1,10 @@
 import React from "react";
 import MainNavigation from "../components/MainNavigation.jsx";
+import characterImage from "/src/assets/slides/character.png";
 
 const CharacterPage = () => {
 	const images = [
-		'/src/assets/slides/character.png',
+		characterImage
 	];
 
 	return (
@@ -14,7 +15,7 @@ const CharacterPage = () => {
 					<div key={index} className="w-full h-full">
 						<img
 							src={src}
-							alt={`스토리 이미지 ${index + 1}`}
+							alt={`캐릭터 이미지 ${index + 1}`}
 							className="w-full h-full object-contain"
 						/>
 					</div>

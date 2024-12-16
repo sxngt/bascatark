@@ -1,11 +1,9 @@
 import MainNavigation from "../../components/MainNavigation.jsx";
 import React from "react";
+import image1 from "/src/assets/slides/b1/1.png"
 
 const BaseOnePage = () => {
-	const images = [
-		'/src/assets/slides/b1/1.png',
-	];
-
+	const images =[image1]
 	return (
 		<div className="fixed inset-0 w-screen h-screen bg-white">
 			<MainNavigation/>

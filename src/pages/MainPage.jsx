@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Menu, X, ChevronDown, Clock, MapPin, Ticket} from 'lucide-react';
 import MainNavigation from "../components/MainNavigation.jsx";
+import video from '/src/assets/placehoder/main-video.mp4'
+
 
 const MainPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +49,7 @@ const MainPage = () => {
 					muted
 					playsInline
 				>
-					<source src="/src/assets/placehoder/main-video.mp4" type="video/mp4"/>
+					<source src={video} type="video/mp4"/>
 					Your browser does not support the video tag.
 				</video>
 

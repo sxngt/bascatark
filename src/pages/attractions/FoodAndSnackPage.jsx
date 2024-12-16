@@ -1,9 +1,10 @@
 import MainNavigation from "../../components/MainNavigation.jsx";
 import React from "react";
+import foodImage from "/src/assets/slides/food-snack/1.png";
 
 const FoodAndSnackPage = () => {
 	const images = [
-		'/src/assets/slides/food-snack/1.png',
+		foodImage
 	];
 
 	return (
