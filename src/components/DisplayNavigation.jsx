@@ -23,7 +23,7 @@ const navigation = [
 		title: '온라인 전시관',
 		items: [
 			{id: 'metaverse', name: '메타버스 공간 체험하기', href: 'https://zep.us/play/pnr9l6'},
-			{id: 'metaverse-intro', name: '메타버스 튜토리얼 / 소개', href: 'https://zep.us/play/pnr9l6'},
+			{id: 'metaverse-intro', name: '메타버스 튜토리얼 / 소개', href: '/metaverse/intro'},
 		]
 	},
 	{

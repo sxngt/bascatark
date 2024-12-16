@@ -15,6 +15,7 @@ import OutLinePage from "./pages/display/OutLinePage.jsx";
 import TicketPage from "./pages/display/TicketPage.jsx";
 import GuideInfoPage from "./pages/bascatark/guides/GuideInfoPage.jsx";
 import ConceptPage from "./pages/display/ConceptPage.jsx";
+import MetaverseInfoPage from "./pages/display/MetaverseInfoPage.jsx";
 
 function App() {
 	return (
@@ -38,6 +39,7 @@ function App() {
 				<Route path="/gallery/" element={<GalleryPage/>}/>
 				<Route path="/info/outline/" element={<OutLinePage/>}/>
 				<Route path="/ticket/" element={<TicketPage/>}/>
+				<Route path="/metaverse/intro" element={<MetaverseInfoPage/>}/>
 			</Routes>
 		</BrowserRouter>
 	)
