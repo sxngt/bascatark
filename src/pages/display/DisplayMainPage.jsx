@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Menu, X, ChevronDown, Clock, MapPin, Ticket} from 'lucide-react';
 import video from '/src/assets/placehoder/display-video.mp4'
 import image from '/src/assets/placehoder/display-slogan.png'
@@ -6,12 +6,17 @@ import DisplayNavigation from "../../components/DisplayNavigation.jsx";
 
 const MainPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const videoRef = useRef(null);
 
 	useEffect(() => {
+		if (videoRef.current) {
+			videoRef.current.currentTime = 34; // 33초부터 시작
+		}
 		document.body.style.margin = '0';
 		document.body.style.padding = '0';
 		document.body.style.overflow = 'hidden';
 	}, []);
+
 
 	const menuItems = [
 		{
@@ -43,6 +48,7 @@ const MainPage = () => {
 			{/* Hero Section with Autoplay Video */}
 			<div className="relative w-full h-screen">
 				<video
+					ref={videoRef}
 					className="absolute top-0 left-0 w-full h-full object-cover"
 					autoPlay
 					loop
