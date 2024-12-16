@@ -1,9 +1,9 @@
-import storyImage from '../assets/slides/story.png';
-import MainNavigation from "../components/MainNavigation.jsx";  // 상단에 이미지 import
+import MainNavigation from "../../../components/MainNavigation.jsx";
+import React from "react";
 
-const StoryPage = () => {
+const MapPage = () => {
 	const images = [
-		storyImage,  // import한 이미지 사용
+		'/src/assets/slides/maps/1.png',
 	];
 
 	return (
@@ -24,4 +24,4 @@ const StoryPage = () => {
 	);
 }
 
-export default StoryPage;
+export default MapPage;

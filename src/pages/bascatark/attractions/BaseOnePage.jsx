@@ -1,4 +1,4 @@
-import MainNavigation from "../../components/MainNavigation.jsx";
+import MainNavigation from "../../../components/MainNavigation.jsx";
 import React from "react";
 import image1 from "/src/assets/slides/b1/1.png"
 

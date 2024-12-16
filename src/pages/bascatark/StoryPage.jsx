@@ -1,10 +1,9 @@
-import React from "react";
-import MainNavigation from "../components/MainNavigation.jsx";
-import characterImage from "/src/assets/slides/character.png";
+import storyImage from '../../assets/slides/story.png';
+import MainNavigation from "../../components/MainNavigation.jsx";  // 상단에 이미지 import
 
-const CharacterPage = () => {
+const StoryPage = () => {
 	const images = [
-		characterImage
+		storyImage,  // import한 이미지 사용
 	];
 
 	return (
@@ -15,7 +14,7 @@ const CharacterPage = () => {
 					<div key={index} className="w-full h-full">
 						<img
 							src={src}
-							alt={`캐릭터 이미지 ${index + 1}`}
+							alt={`스토리 이미지 ${index + 1}`}
 							className="w-full h-full object-contain"
 						/>
 					</div>
@@ -25,4 +24,4 @@ const CharacterPage = () => {
 	);
 }
 
-export default CharacterPage;
+export default StoryPage;

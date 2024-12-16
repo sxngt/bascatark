@@ -1,5 +1,5 @@
 import React from 'react';
-import MainNavigation from "../../components/MainNavigation.jsx";
+import MainNavigation from "../../../components/MainNavigation.jsx";
 import image1 from '/src/assets/slides/1f/1.png';
 import image2 from '/src/assets/slides/1f/2.png';
 import image3 from '/src/assets/slides/1f/3.png';

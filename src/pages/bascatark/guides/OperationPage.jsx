@@ -1,4 +1,4 @@
-import MainNavigation from "../../components/MainNavigation.jsx";
+import MainNavigation from "../../../components/MainNavigation.jsx";
 import React from "react";
 
 const OperationPage = () => {

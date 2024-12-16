@@ -1,9 +1,10 @@
-import MainNavigation from "../../components/MainNavigation.jsx";
 import React from "react";
+import MainNavigation from "../../components/MainNavigation.jsx";
+import characterImage from "/src/assets/slides/character.png";
 
-const MapPage = () => {
+const CharacterPage = () => {
 	const images = [
-		'/src/assets/slides/maps/1.png',
+		characterImage
 	];
 
 	return (
@@ -14,7 +15,7 @@ const MapPage = () => {
 					<div key={index} className="w-full h-full">
 						<img
 							src={src}
-							alt={`스토리 이미지 ${index + 1}`}
+							alt={`캐릭터 이미지 ${index + 1}`}
 							className="w-full h-full object-contain"
 						/>
 					</div>
@@ -24,4 +25,4 @@ const MapPage = () => {
 	);
 }
 
-export default MapPage;
+export default CharacterPage;

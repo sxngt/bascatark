@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Menu, X, ChevronDown, Clock, MapPin, Ticket} from 'lucide-react';
-import MainNavigation from "../components/MainNavigation.jsx";
-import video from '/src/assets/placehoder/main-video.mp4'
-
+import video from '/src/assets/placehoder/display-video.mp4'
+import image from '/src/assets/placehoder/display-slogan.png'
+import DisplayNavigation from "../../components/DisplayNavigation.jsx";
 
 const MainPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +38,7 @@ const MainPage = () => {
 
 	return (
 		<div className="min-h-screen bg-gray-50 fixed inset-0 w-screen h-screen overflow-y-auto">
-			<MainNavigation/>
+			<DisplayNavigation/>
 
 			{/* Hero Section with Autoplay Video */}
 			<div className="relative w-full h-screen">
@@ -53,18 +53,19 @@ const MainPage = () => {
 					Your browser does not support the video tag.
 				</video>
 
-				{/* Overlay with text */}
+				{/* Overlay with image */}
 				<div className="relative z-10 h-full flex flex-col items-center justify-center bg-black bg-opacity-40">
-					<h1 className="text-5xl md:text-6xl font-bold text-white mb-6 px-4 text-center">
-						바스캣아크에 오신 것을 환영합니다
-					</h1>
-					<p className="text-xl md:text-2xl text-white mb-8 px-4 text-center">
-						특별한 추억을 만들어보세요
-					</p>
-					<button
-						className="bg-yellow-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors">
-						지금 예매하기
-					</button>
+					<img
+						src={image}
+						alt="사라진 황금 레시피"
+						className="w-auto h-96 md:h-144 lg:h-192"
+					/>
+					<a href={'/ticket'}>
+						<button
+							className="bg-yellow-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-600 transition-colors">
+							지금 예매하기
+						</button>
+					</a>
 				</div>
 			</div>
 
